@@ -19,10 +19,13 @@ body {
 h1 {
     margin: 10px;
     text-align: center;
+    color: #446A71;
 }
 
 h3 {
     text-align: center;
+    color: #446A71;
+    margin-bottom: 5px;
 }
 
 p {
