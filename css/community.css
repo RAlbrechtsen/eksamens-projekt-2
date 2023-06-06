@@ -10,3 +10,20 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.logo {
+    width: 30%;
+}
+
+.button {
+    display: flex;
+    background-color: #546C5A;
+    color: #fff;
+    margin: 7em;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: ;
+}
