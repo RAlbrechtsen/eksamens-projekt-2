@@ -9,10 +9,17 @@ body {
     color: #eee;
 }
 
-
+.logo {
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
 
 
 /*navigation*/
+
 li                                                      {list-style: none;}
 
 
@@ -55,31 +62,35 @@ a                                                       {color: #EEEEEE;
     background-color: #D6BA9C;}
 
 
-.logo {
-    height: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-}
-
-#commImg {
-    width: 100%;
-}
 
 h1 {
+    margin: 10px;
     text-align: center;
     color: #446A71;
 }
 
-h2 {
+h3 {
     text-align: center;
     color: #446A71;
+    margin-bottom: 5px;
 }
 
 p {
     text-align: center;
-    margin: 5px;
+    margin: 10px;
+}
+
+#learnMoreImg {
+    width: 100%;
+}
+
+#faraosImg {
+    width: 100%;
+    height: 90%;   
+}
+
+#warhammerImg {
+    width: 100%;
 }
 
 .button {
@@ -102,14 +113,30 @@ p {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2E2E2E;
+    text-align: center;
+    padding: 1em;
 }
 
 #socials {
-    width: 15%;
+    height: 25px;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media query for desktop */
+
+@media(min-width: 720px) {
+    #learnMoreImg {
+        width: 80%;
+        align-content: center;
+    }
+
+    .container {
+        height: 100vh;
+        display: grid;
+
+    }
 }
 
 
@@ -162,12 +189,4 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 0 24px;}
-    
-    
-body        {
-padding-top: 15px;
-padding-right: 5%;
-padding-left: 5%;}
-}
-
 }
