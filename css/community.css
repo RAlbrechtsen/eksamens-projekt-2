@@ -9,6 +9,52 @@ body {
     color: #eee;
 }
 
+
+
+
+/*navigation*/
+li                                                      {list-style: none;}
+
+
+a                                                       {color: #EEEEEE;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;}
+    
+
+.navbar                                                 {min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;}
+
+.nav-menu                                               {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 50px;}
+
+.nav-link                                               {transition: 0.7s ease;}
+
+
+.nav-link:hover                                         {color: #292928;}
+
+
+.hamburger                                              {display: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;}
+
+
+.bar                                                    {display: block;
+    width: 20px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #D6BA9C;}
+
+
 .logo {
     height: 150px;
     display: block;
@@ -64,4 +110,64 @@ footer {
 
 #socials {
     width: 15%;
+}
+
+
+
+
+/*MEDIA QUERY FOR MOBILE VERSION*/                                                      
+@media(max-width:480px){
+.hamburger{
+display: block;
+}
+.hamburger.active .bar:nth-child(2){
+opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+transform: translateY(7px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+transform: translateY(-7px) rotate(-45deg);
+}
+
+
+.nav-menu{
+position: fixed;
+right: -120%;
+top: 120px;
+gap: 0;
+flex-direction: column;
+background-color: #D6BA9C;
+width: 100%;
+text-align: center;
+transition: 0.3s;
+}
+
+.nav-items{
+margin: 16px 0;
+}
+
+.nav-menu.active{
+right: 0;
+}
+a{
+color: black;
+text-decoration: none;
+font-family: 'Open Sans', sans-serif;
+font-size: 15px;}
+
+.navbar{
+min-height: 70px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 24px;}
+    
+    
+body        {
+padding-top: 15px;
+padding-right: 5%;
+padding-left: 5%;}
+}
+
 }
